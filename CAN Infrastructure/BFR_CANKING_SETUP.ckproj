@@ -1,0 +1,252 @@
+{
+  "version": 5,
+  "measurementSetup": {
+    "sources": [
+      {
+        "baseNode": {
+          "identifier": "9a8a09ea-3dc0-4dec-8896-8844814f4d1d",
+          "name": "CAN 1",
+          "description": [
+            "Kvaser Leaf Light v2 - 120326",
+            "0: CAN - 500 kbit/s, 75%"
+          ],
+          "readOnlyProperties": false,
+          "readOnlyConnections": false,
+          "disabled": false
+        },
+        "isDataGenerator": false,
+        "channelSettings": {
+          "channelNumber": 0,
+          "lockedToSerialNumber": false,
+          "deviceProductCode": "73-30130-00685-0",
+          "deviceSerialNumber": "120326",
+          "channelNumberOnDevice": 0,
+          "deviceCardType": 48,
+          "deviceCardNumber": 0,
+          "canConfiguration": {
+            "canMode": 1,
+            "accessMode": 1,
+            "silentMode": false,
+            "busSpeed": {
+              "bitRate": 500000,
+              "timeSegment1": 11,
+              "timeSegment2": 4,
+              "syncJumpWidth": 4,
+              "numberOfSamplePoints": 1,
+              "prescaler": 1
+            },
+            "busSpeedDataPhase": {
+              "bitRate": 4000000,
+              "timeSegment1": 7,
+              "timeSegment2": 2,
+              "syncJumpWidth": 2,
+              "numberOfSamplePoints": 1,
+              "prescaler": 2
+            }
+          }
+        }
+      },
+      {
+        "baseNode": {
+          "identifier": "1efe74b8-4868-43e8-b5ef-69a58d8f7465",
+          "name": "power switch request ",
+          "description": [
+            "Id 500, 500 ms, CAN DLC: 8"
+          ],
+          "readOnlyProperties": false,
+          "readOnlyConnections": true,
+          "disabled": true
+        },
+        "isDataGenerator": true,
+        "trafficGeneratorSettings": {
+          "channelIdentifier": "e2428a04-6faf-400e-b3ce-a54f505a146b",
+          "frame": {
+            "id": 1280,
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              255
+            ],
+            "canFrameFlags": {
+              "flags": [
+                2
+              ]
+            }
+          },
+          "randomInterval": false,
+          "constantIntervalMs": 500,
+          "randomIntervalMinMs": 50,
+          "randomIntervalMaxMs": 500,
+          "numberOfMessages": 0,
+          "randomDataLength": false,
+          "randomMessageData": false,
+          "randomIdentifier": false,
+          "scanIdentifier": false,
+          "identifierMin": 0,
+          "identifierMax": 2047,
+          "randomBurstSize": false,
+          "constantBurstSize": 3,
+          "randomBurstSizeMin": 1,
+          "randomBurstSizeMax": 5
+        }
+      },
+      {
+        "baseNode": {
+          "identifier": "a94e2dc9-4b2e-499c-922b-d242a12072eb",
+          "name": "PWOER SHIC",
+          "description": [
+            "Id 6FB, 500 ms, CAN DLC: 8"
+          ],
+          "readOnlyProperties": false,
+          "readOnlyConnections": true,
+          "disabled": true
+        },
+        "isDataGenerator": true,
+        "trafficGeneratorSettings": {
+          "channelIdentifier": "e2428a04-6faf-400e-b3ce-a54f505a146b",
+          "frame": {
+            "id": 1787,
+            "data": [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "canFrameFlags": {
+              "flags": [
+                2
+              ]
+            }
+          },
+          "randomInterval": false,
+          "constantIntervalMs": 500,
+          "randomIntervalMinMs": 50,
+          "randomIntervalMaxMs": 500,
+          "numberOfMessages": 0,
+          "randomDataLength": false,
+          "randomMessageData": false,
+          "randomIdentifier": false,
+          "scanIdentifier": false,
+          "identifierMin": 0,
+          "identifierMax": 2047,
+          "randomBurstSize": false,
+          "constantBurstSize": 1,
+          "randomBurstSizeMin": 1,
+          "randomBurstSizeMax": 5
+        }
+      }
+    ],
+    "dataProcessors": [
+      {
+        "baseNode": {
+          "identifier": "f870c305-95fa-40a2-a1b6-d14be68d2dad",
+          "name": "Databases 1",
+          "description": [
+            "BFR_DRIVE_BUS.dbc"
+          ],
+          "readOnlyProperties": false,
+          "readOnlyConnections": false,
+          "disabled": false
+        },
+        "connectedNodes": [
+          "9a8a09ea-3dc0-4dec-8896-8844814f4d1d"
+        ],
+        "databasesSettings": {
+          "databaseFiles": [
+            "C:\\Users\\antho\\Box\\BFR\\MK10\\Mk. 10 Top Assembly\\Testing CAN Logs\\BFR_DRIVE_BUS.dbc"
+          ]
+        }
+      }
+    ],
+    "targets": [
+      {
+        "baseNode": {
+          "identifier": "2EE6667D-2C84-4BEB-822C-7494CC93B08E",
+          "name": "UI Streams",
+          "description": [
+            "Streams data and status to the user interface"
+          ],
+          "readOnlyProperties": true,
+          "readOnlyConnections": false,
+          "disabled": false
+        },
+        "connectedNodes": [
+          "f870c305-95fa-40a2-a1b6-d14be68d2dad"
+        ]
+      },
+      {
+        "baseNode": {
+          "identifier": "9a8a09ea-3dc0-4dec-8896-8844814f4d1d",
+          "name": "CAN 1 - Out",
+          "description": [
+            "Kvaser Leaf Light v2 - 120326",
+            "0: CAN - 500 kbit/s, 75%"
+          ],
+          "readOnlyProperties": true,
+          "readOnlyConnections": true,
+          "disabled": false
+        },
+        "connectedNodes": []
+      }
+    ],
+    "language": "en"
+  },
+  "workspaces": [
+    {
+      "id": 1,
+      "title": "Workspace 1",
+      "workspacePaneId": 1
+    }
+  ],
+  "workspacePanes": [
+    {
+      "id": 1,
+      "containerData": {
+        "vertical": false,
+        "paneDataIds": [
+          3
+        ],
+        "paneRatios": [
+          1
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "componentData": {
+        "componentId": "message-trace-view",
+        "componentProps": "{\"fixedPosition\":true,\"txFilter\":null,\"channelFilter\":null,\"protocolFilter\":null,\"maxDataBytes\":null,\"columnWidths\":{},\"interpreter\":\"None\"}"
+      }
+    },
+    {
+      "id": 3,
+      "containerData": {
+        "vertical": true,
+        "paneDataIds": [
+          4,
+          2
+        ],
+        "paneRatios": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "componentData": {
+        "componentId": "can-bus-statistics-view",
+        "componentProps": "{\"channelId\":\"9a8a09ea-3dc0-4dec-8896-8844814f4d1d\",\"channelCollapsed\":false,\"statisticsCollapsed\":false,\"statusCollapsed\":false}"
+      }
+    }
+  ]
+}

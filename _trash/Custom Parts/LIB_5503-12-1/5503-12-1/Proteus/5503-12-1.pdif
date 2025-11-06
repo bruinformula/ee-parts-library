@@ -1,0 +1,126 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "5503-12-1"
+   (description "Reed Relays REED RELAY SPST 3A 12V")
+   (family "RLY")
+   (package "5503121")
+   (attribute "Datasheet Link" "https://componentsearchengine.com/Datasheets/1/5503-12-1.pdf")
+   (attribute "Geometry.Height" "19.05mm")
+   (attribute "Newark Part Number" "")
+   (attribute "Newark Price/Stock" "")
+   (attribute "Manufacturer_Name" "Coto Technology")
+   (attribute "Manufacturer_Part_Number" "5503-12-1")
+   (gate
+    (symbol "5503-12-1")
+    (pin "1" 1 PS)
+    (pin "COIL_1" 2 PS)
+    (pin "COIL_2" 3 PS)
+    (pin "4" 4 PS)
+   )
+  )
+  (symbol "5503-12-1"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 900 100) (pt 900 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1100 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1100 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "5503121"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -5.08 9.02)
+      (pt 66.04 9.02)
+      (pt 66.04 -9.01)
+      (pt -5.08 -9.01)
+      (pt -5.08 9.02))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -5.08 9.02)
+      (pt 66.04 9.02)
+      (pt 66.04 -9.01)
+      (pt -5.08 -9.01)
+      (pt -5.08 9.02))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -6.08 10.02)
+      (pt 67.04 10.02)
+      (pt 67.04 -10.01)
+      (pt -6.08 -10.01)
+      (pt -6.08 10.02))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -5.4 0)
+      (arc (pt -5.400 0.000) (pt -5.500 -0.050) (pt -5.400 0.050) (start 180.0) (sweep .0))
+      (pt -5.5 0)
+      (arc (pt -5.500 0.000) (pt -5.500 -0.050) (pt -5.400 0.050) (start 180.0) (sweep -180.0))
+      (pt -5.4 0))))
+   (leg 1 (pt 0.000 0.000) (padstack 1))
+   (leg 2 (pt 17.780 5.080) (padstack 0))
+   (leg 3 (pt 43.180 5.080) (padstack 0))
+   (leg 4 (pt 60.960 0.000) (padstack 0))
+   (padstack 0
+    (hole 1.04)
+    (plated true)
+    (pad (layer TCOP) (round 1.560))
+    (pad (layer INNER) (round 1.560))
+    (pad (layer BCOP) (round 1.560))
+   )
+   (padstack 1
+    (hole 1.04)
+    (plated true)
+    (pad (layer TCOP) (square 1.560))
+    (pad (layer INNER) (round 1.560))
+    (pad (layer BCOP) (square 1.560))
+   )
+   (model "5503-12-1.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

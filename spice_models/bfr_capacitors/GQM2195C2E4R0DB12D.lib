@@ -1,0 +1,16 @@
+
+* Custom ceramic capacitor model
+* Simulated Characteristics
+*   Capacitance
+* Characteristics Not Simulated
+*   Temperature Effects
+*   Breakdown at High Voltage
+*   Part-to-Part Variance
+*   Thermal Noise
+*   Series Inductances
+*   Leakage Resistance
+*   Series Resistance
+
+.SUBCKT GQM2195C2E4R0DB12D P1 P2
+Cbody P1 P2 4.0p
+.ENDS

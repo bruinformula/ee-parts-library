@@ -1,0 +1,15 @@
+
+* Custom shunt resistor model
+* Simulated Characteristics
+*   Resistance
+* Characteristics Not Simulated
+*   Temperature Effects
+*   Breakdown at High Voltage
+*   Part-to-Part Variance
+*   Thermal Noise
+*   Parasitic Inductances
+*   Leakage Capacitances
+
+.SUBCKT TLRP3A30CR003FTDG P1 P2
+Rbody P1 P2 3m
+.ENDS

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '5503_12_1'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "NEWARK_PART_NUMBER", "NEWARK_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Coto Technology", "5503-12-1" (!) = "", "5503121", "Other", "", "", "Reed Relays REED RELAY SPST 3A 12V", "https://componentsearchengine.com/Datasheets/1/5503-12-1.pdf", "19.05 mm"
+END_PART
+
+END.

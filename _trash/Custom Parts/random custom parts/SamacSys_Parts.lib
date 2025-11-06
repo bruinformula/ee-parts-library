@@ -1,0 +1,148 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model NE555DR
+#/6648/2/2.37/8/4/Integrated Circuit
+DEF NE555DR IC 0 30 Y Y 1 F N
+F0 "IC" 1050 600 50 H V L CNN
+F1 "NE555DR" 1050 500 50 H V L CNN
+F2 "SOIC127P600X175-8N" 1050 400 50 H I L CNN
+F3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" 1050 300 50 H I L CNN
+F4 "Single Precision Timer" 1050 200 50 H I L CNN "Description"
+F5 "1.75" 1050 100 50 H I L CNN "Height"
+F6 "Texas Instruments" 1050 0 50 H I L CNN "Manufacturer_Name"
+F7 "NE555DR" 1050 -100 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-NE555DR" 1050 -200 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-NE555DR" 1050 -300 50 H I L CNN "Mouser Price/Stock"
+F10 "1218414" 1050 -400 50 H I L CNN "RS Part Number"
+F11 "http//uk.rs-online.com/web/p/products/1218414" 1050 -500 50 H I L CNN "RS Price/Stock"
+DRAW
+X GND 1 600 -1000 200 U 50 50 0 0 B
+X TRIG 2 0 -400 200 R 50 50 0 0 B
+X OUT 3 1200 -200 200 L 50 50 0 0 B
+X ~RESET 4 0 0 200 R 50 50 0 0 B
+X CONT 5 500 600 200 D 50 50 0 0 B
+X THRES 6 0 -300 200 R 50 50 0 0 B
+X DISCH 7 0 -100 200 R 50 50 0 0 B
+X VCC 8 700 600 200 D 50 50 0 0 B
+P 5 0 1 6 200 400 1000 400 1000 -800 200 -800 200 400 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model SN74HCS251QDRQ1
+#/13818380/434927/2.49/16/3/Integrated Circuit
+DEF SN74HCS251QDRQ1 IC 0 30 Y Y 1 F N
+F0 "IC" 850 300 50 H V L CNN
+F1 "SN74HCS251QDRQ1" 850 200 50 H V L CNN
+F2 "SOIC127P600X175-16N" 850 100 50 H I L CNN
+F3 "" 850 0 50 H I L CNN
+F4 "Encoders, Decoders, Multiplexers & Demultiplexers Automotive data selectors/multiplexers with 3-state outputs 16-SOIC -40 to 125" 850 -100 50 H I L CNN "Description"
+F5 "1.75" 850 -200 50 H I L CNN "Height"
+F6 "595-SN74HCS251QDRQ1" 850 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74HCS251QDRQ1?qs=DRkmTr78QASdzDyW%252Buev5w%3D%3D" 850 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Texas Instruments" 850 -500 50 H I L CNN "Manufacturer_Name"
+F9 "SN74HCS251QDRQ1" 850 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X D3 1 0 0 200 R 50 50 0 0 P
+X D2 2 0 -100 200 R 50 50 0 0 P
+X D1 3 0 -200 200 R 50 50 0 0 P
+X D0 4 0 -300 200 R 50 50 0 0 P
+X Y 5 0 -400 200 R 50 50 0 0 P
+X W 6 0 -500 200 R 50 50 0 0 P
+X ~OE 7 0 -600 200 R 50 50 0 0 P
+X GND 8 0 -700 200 R 50 50 0 0 P
+X VCC 16 1000 0 200 L 50 50 0 0 P
+X D4 15 1000 -100 200 L 50 50 0 0 P
+X D5 14 1000 -200 200 L 50 50 0 0 P
+X D6 13 1000 -300 200 L 50 50 0 0 P
+X D7 12 1000 -400 200 L 50 50 0 0 P
+X A 11 1000 -500 200 L 50 50 0 0 P
+X B 10 1000 -600 200 L 50 50 0 0 P
+X C 9 1000 -700 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 800 100 800 -800 200 -800 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model UJ2-MIBH-3-MSMT-TR-67
+#/11511334/434927/2.49/9/4/Connector
+DEF UJ2-MIBH-3-MSMT-TR-67 J 0 30 Y Y 1 F N
+F0 "J" 750 300 50 H V L CNN
+F1 "UJ2-MIBH-3-MSMT-TR-67" 750 200 50 H V L CNN
+F2 "UJ2MIBH3MSMTTR67" 750 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/UJ2-MIBH-3-MSMT-TR-67.pdf" 750 0 50 H I L CNN
+F4 "USB Connectors USB jack 2.0, micro B type, IP67, 5 pin, horizontal, 15 in plating, mid mount, T&R pckg" 750 -100 50 H I L CNN "Description"
+F5 "4.45" 750 -200 50 H I L CNN "Height"
+F6 "490-UJ2MIBH3MSMTTR67" 750 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/CUI-Devices/UJ2-MIBH-3-MSMT-TR-67?qs=l7cgNqFNU1iQf9Yue11bmg%3D%3D" 750 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "CUI Inc." 750 -500 50 H I L CNN "Manufacturer_Name"
+F9 "UJ2-MIBH-3-MSMT-TR-67" 750 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X 3 3 0 -200 200 R 50 50 0 0 P
+X 4 4 0 -300 200 R 50 50 0 0 P
+X 5 5 0 -400 200 R 50 50 0 0 P
+X MH1 MH1 900 0 200 L 50 50 0 0 P
+X MH2 MH2 900 -100 200 L 50 50 0 0 P
+X MH3 MH3 900 -200 200 L 50 50 0 0 P
+X MH4 MH4 900 -300 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 700 100 700 -500 200 -500 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model 320P14-U
+#/1673010/434927/2.49/14/3/Transistor BJT PNP
+DEF 320P14-U Q 0 30 Y Y 1 F N
+F0 "Q" 950 300 50 H V L CNN
+F1 "320P14-U" 950 200 50 H V L CNN
+F2 "DIP794W51P254L1918H432Q14N" 950 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/320P14-U.pdf" 950 0 50 H I L CNN
+F4 "Bipolar Transistors - BJT 4 PNP Matched Trans. Array DIP-14" 950 -100 50 H I L CNN "Description"
+F5 "4.32" 950 -200 50 H I L CNN "Height"
+F6 "887-320P14-U" 950 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=887-320P14-U" 950 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "THAT CORPORATION" 950 -500 50 H I L CNN "Manufacturer_Name"
+F9 "320P14-U" 950 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X C1 1 0 0 200 R 50 50 0 0 P
+X B1 2 0 -100 200 R 50 50 0 0 P
+X E1 3 0 -200 200 R 50 50 0 0 P
+X NC_1 4 0 -300 200 R 50 50 0 0 P
+X E3 5 0 -400 200 R 50 50 0 0 P
+X B3 6 0 -500 200 R 50 50 0 0 P
+X C3 7 0 -600 200 R 50 50 0 0 P
+X C2 14 1100 0 200 L 50 50 0 0 P
+X B2 13 1100 -100 200 L 50 50 0 0 P
+X E2 12 1100 -200 200 L 50 50 0 0 P
+X NC_2 11 1100 -300 200 L 50 50 0 0 P
+X E4 10 1100 -400 200 L 50 50 0 0 P
+X B4 9 1100 -500 200 L 50 50 0 0 P
+X C4 8 1100 -600 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 900 100 900 -700 200 -700 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model FBR56ND12-W
+#/1158991/434927/2.49/6/4/Connector
+DEF FBR56ND12-W J 0 30 Y Y 1 F N
+F0 "J" 1150 300 50 H V L CNN
+F1 "FBR56ND12-W" 1150 200 50 H V L CNN
+F2 "FBR56ND12W" 1150 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/FBR56ND12-W.pdf" 1150 0 50 H I L CNN
+F4 "Automotive Relays AUTO" 1150 -100 50 H I L CNN "Description"
+F5 "16.5" 1150 -200 50 H I L CNN "Height"
+F6 "817-FBR56ND12-W" 1150 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Fujitsu/FBR56ND12-W/?qs=W%2FdzdhLmAuTJ6Raou5GrJQ%3D%3D" 1150 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "FUJITSU" 1150 -500 50 H I L CNN "Manufacturer_Name"
+F9 "FBR56ND12-W" 1150 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X N.O. 1 0 -200 200 R 50 50 0 0 P
+X N.C. 2 1300 -200 200 L 50 50 0 0 N
+X COIL_1 3 0 -100 200 R 50 50 0 0 P
+X COIL_2 4 1300 -100 200 L 50 50 0 0 P
+X COM_1 5 0 0 200 R 50 50 0 0 P
+X COM_2 6 1300 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1100 100 1100 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

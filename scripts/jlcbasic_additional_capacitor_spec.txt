@@ -1,0 +1,187 @@
+<symbol-code>
+  (symbol "{Mfr P/N}"
+    (property "Reference" "C" (at 0 2.54 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "{Value}" (at 1.27 2.54 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "{Kicad FP}" (at 0 -2.54 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "{Datasheet}" (at 0 -3.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "SUBCKT" (at 0 -5.08 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=P1 2=P2" (at 0 -6.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Library" "${BFRUH_DIR}/Electronics/spice_models/bfr_capacitors/{Mfr P/N}.lib" (at 0 -7.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Name" "{Mfr P/N}" (at 0 -8.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Pretty Name" "{Pretty Name}" (at 0 -10.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Qty/Unit" "" (at 0 -11.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Cost/Unit" "" (at 0 -12.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Order From" "{Supplier Choice}" (at 0 -13.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Digikey P/N" "{Digikey P/N}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Mouser P/N" "{Mouser P/N}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC P/N" "{LCSC P/N}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "JLCPCB Basic Part" "{Basic Part Pretty}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Created by" "capacitor_generator.py script using jlcbasic_additional_capacitor_spec.txt" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "{Description}" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "{Mfr P/N}_0_1"
+      (polyline
+        (pts
+          (xy -2.032 -0.762) (xy 2.032 -0.762)
+        )
+        (stroke
+          (width 0.508)
+          (type default)
+        )
+        (fill
+          (type none)
+        )
+      )
+      (polyline
+        (pts
+          (xy -2.032 0.762) (xy 2.032 0.762)
+        )
+        (stroke
+          (width 0.508)
+          (type default)
+        )
+        (fill
+          (type none)
+        )
+      )
+    )
+    (symbol "{Mfr P/N}_1_1"
+      (pin passive line
+        (at 0 3.81 270)
+        (length 2.794)
+        (name "~"
+          (effects
+            (font
+              (size 1.27 1.27)
+            )
+          )
+        )
+        (number "1"
+          (effects
+            (font
+              (size 1.27 1.27)
+            )
+          )
+        )
+      )
+      (pin passive line
+        (at 0 -3.81 90)
+        (length 2.794)
+        (name "~"
+          (effects
+            (font
+              (size 1.27 1.27)
+            )
+          )
+        )
+        (number "2"
+          (effects
+            (font
+              (size 1.27 1.27)
+            )
+          )
+        )
+      )
+    )
+  )
+</symbol-code>
+<spice-code>
+* Custom ceramic capacitor model
+* Simulated Characteristics
+*   Capacitance
+* Characteristics Not Simulated
+*   Temperature Effects
+*   Breakdown at High Voltage
+*   Part-to-Part Variance
+*   Thermal Noise
+*   Series Inductances
+*   Leakage Resistance
+*   Series Resistance
+
+.SUBCKT {Mfr P/N} P1 P2
+Cbody P1 P2 {Value}
+.ENDS
+</spice-code>
+
+Manufacturer P/N in use matches the LCSC P/N, but is not guaranteed to match the Digikey and Mouser P/N's.
+<part-attributes>
+Package,Value,Mfr P/N,Digikey P/N,Mouser P/N,LCSC P/N,Basic Part?,Description,Supplier Choice,Basic Part Pretty,Pretty Name,Kicad FP,Datasheet
+0402,1n,0402B102K500NT,,,C1523,1,1nF±10% X7R 50V JLCPCB Basic 0402 Capacitor,LCSC,Yes,1nF X7R 50V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0402,100n,CL05B104KO5NNNC,,,C1525,1,100nF±10% X7R 16V JLCPCB Basic 0402 Capacitor,LCSC,Yes,100nF X7R 16V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0402,220p,0402B221K500NT,,,C1530,1,220pF±10% X7R 50V JLCPCB Basic 0402 Capacitor,LCSC,Yes,220pF X7R 50V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0402,22n,0402B223K500NT,,,C1532,1,22nF±10% X7R 50V JLCPCB Basic 0402 Capacitor,LCSC,Yes,22nF X7R 50V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0402,4.7n,0402B472K500NT,,,C1538,1,4.7nF±10% X7R 50V JLCPCB Basic 0402 Capacitor,LCSC,Yes,4.7nF X7R 50V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0402,100p,0402CG101J500NT,,,C1546,1,100pF±5% C0G 50V JLCPCB Basic 0402 Capacitor,LCSC,Yes,100pF C0G 50V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0402,12p,0402CG120J500NT,,,C1547,1,12pF±5% C0G 50V JLCPCB Basic 0402 Capacitor,LCSC,Yes,12pF C0G 50V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0402,15p,0402CG150J500NT,,,C1548,1,15pF±5% C0G 50V JLCPCB Basic 0402 Capacitor,LCSC,Yes,15pF C0G 50V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0402,18p,0402CG180J500NT,,,C1549,1,18pF±5% C0G 50V JLCPCB Basic 0402 Capacitor,LCSC,Yes,18pF C0G 50V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0402,20p,0402CG200J500NT,,,C1554,1,20pF±5% C0G 50V JLCPCB Basic 0402 Capacitor,LCSC,Yes,20pF C0G 50V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0402,22p,0402CG220J500NT,,,C1555,1,22pF±5% C0G 50V JLCPCB Basic 0402 Capacitor,LCSC,Yes,22pF C0G 50V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0402,33p,0402CG330J500NT,,,C1562,1,33pF±5% C0G 50V JLCPCB Basic 0402 Capacitor,LCSC,Yes,33pF C0G 50V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0402,47p,0402CG470J500NT,,,C1567,1,47pF±5% C0G 50V JLCPCB Basic 0402 Capacitor,LCSC,Yes,47pF C0G 50V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0603,330p,CL10C331JB8NNNC,,,C1664,1,330pF±5% C0G 50V JLCPCB Basic 0603 Capacitor,LCSC,Yes,330pF C0G 50V 0603 Capacitor,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,
+0805,4.7u,CL21A475KAQNNNE,,,C1779,1,4.7uF±10% X5R 25V JLCPCB Basic 0805 Capacitor,LCSC,Yes,4.7uF X5R 25V 0805 Capacitor,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,
+1206,10n,1206B103K500NT,,,C1846,1,10nF±10% X7R 50V JLCPCB Basic 1206 Capacitor,LCSC,Yes,10nF X7R 50V 1206 Capacitor,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,
+1206,1u,CL31B105KBHNNNE,,,C1848,1,1uF±10% X7R 50V JLCPCB Basic 1206 Capacitor,LCSC,Yes,1uF X7R 50V 1206 Capacitor,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,
+1206,1n,1206B102K202NT,,,C9196,1,1nF±10% X7R 2kV JLCPCB Basic 1206 Capacitor,LCSC,Yes,1nF X7R 2kV 1206 Capacitor,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,
+0402,2.2u,CL05A225MQ5NSNC,,,C12530,1,2.2uF±20% X5R 6.3V JLCPCB Basic 0402 Capacitor,LCSC,Yes,2.2uF X5R 6.3V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+1206,22u,CL31A226KAHNNNE,,,C12891,1,22uF±10% X5R 25V JLCPCB Basic 1206 Capacitor,LCSC,Yes,22uF X5R 25V 1206 Capacitor,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,
+1206,10u,CL31A106KBHNNNE,,,C13585,1,10uF±10% X5R 50V JLCPCB Basic 1206 Capacitor,LCSC,Yes,10uF X5R 50V 1206 Capacitor,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,
+1206,100u,CL31A107MQHNNNE,,,C15008,1,100uF±20% X5R 6.3V JLCPCB Basic 1206 Capacitor,LCSC,Yes,100uF X5R 6.3V 1206 Capacitor,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,
+0402,10n,CL05B103KB5NNNC,,,C15195,1,10nF±10% X7R 50V JLCPCB Basic 0402 Capacitor,LCSC,Yes,10nF X7R 50V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0402,10u,CL05A106MQ5NUNC,,,C15525,1,10uF±20% X5R 6.3V JLCPCB Basic 0402 Capacitor,LCSC,Yes,10uF X5R 6.3V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0603,1u,CL10A105KB8NNNC,,,C15849,1,1uF±10% X5R 50V JLCPCB Basic 0603 Capacitor,LCSC,Yes,1uF X5R 50V 0603 Capacitor,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,
+0402,220n,CL05B224KO5NNNC,,,C16772,1,220nF±10% X7R 16V JLCPCB Basic 0402 Capacitor,LCSC,Yes,220nF X7R 16V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0805,47u,CL21A476MQYNNNE,,,C16780,1,47uF±20% X5R 6.3V JLCPCB Basic 0805 Capacitor,LCSC,Yes,47uF X5R 6.3V 0805 Capacitor,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,
+0603,4.7u,CL10A475KO8NNNC,,,C19666,1,4.7uF±10% X5R 16V JLCPCB Basic 0603 Capacitor,LCSC,Yes,4.7uF X5R 16V 0603 Capacitor,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,
+0603,10u,CL10A106KP8NNNC,,,C19702,1,10uF±10% X5R 10V JLCPCB Basic 0603 Capacitor,LCSC,Yes,10uF X5R 10V 0603 Capacitor,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,
+0402,4.7u,CL05A475MP5NRNC,,,C23733,1,4.7uF±20% X5R 10V JLCPCB Basic 0402 Capacitor,LCSC,Yes,4.7uF X5R 10V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+1206,100n,CL31B104KBCNNNC,,,C24497,1,100nF±10% X7R 50V JLCPCB Basic 1206 Capacitor,LCSC,Yes,100nF X7R 50V 1206 Capacitor,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,
+0805,2.2n,CL21C222JBFNNNE,,,C28260,1,2.2nF±5% C0G 50V JLCPCB Basic 0805 Capacitor,LCSC,Yes,2.2nF C0G 50V 0805 Capacitor,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,
+1206,4.7u,1206B475K500NT,,,C29823,1,4.7uF±10% X7R 50V JLCPCB Basic 1206 Capacitor,LCSC,Yes,4.7uF X7R 50V 1206 Capacitor,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,
+0402,10p,CL05C100JB5NNNC,,,C32949,1,10pF±5% C0G 50V JLCPCB Basic 0402 Capacitor,LCSC,Yes,10pF C0G 50V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0805,22u,CL21A226MAQNNNE,,187-CL21A226MAYNNNE,C45783,1,22uF±20% X5R 25V JLCPCB Basic 0805 Capacitor,LCSC,Yes,22uF X5R 25V 0805 Capacitor,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,
+1206,2.2u,CL31B225KBHNNNE,,,C50254,1,2.2uF±10% X7R 50V JLCPCB Basic 1206 Capacitor,LCSC,Yes,2.2uF X7R 50V 1206 Capacitor,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,
+0402,1u,CL05A105KA5NQNC,,,C52923,1,1uF±10% X5R 25V JLCPCB Basic 0402 Capacitor,LCSC,Yes,1uF X5R 25V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0603,22u,CL10A226MQ8NRNC,,,C59461,1,22uF±20% X5R 6.3V JLCPCB Basic 0603 Capacitor,LCSC,Yes,22uF X5R 6.3V 0603 Capacitor,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,
+1206,47u,CL31A476MPHNNNE,,,C96123,1,47uF±20% X5R 10V JLCPCB Basic 1206 Capacitor,LCSC,Yes,47uF X5R 10V 1206 Capacitor,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,
+0603,10u,CL10A106MA8NRNC,,81-GRM188R61E106MA3D,C96446,1,10uF±20% X5R 25V JLCPCB Basic 0603 Capacitor,LCSC,Yes,10uF X5R 25V 0603 Capacitor,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,
+0402,100n,CL05B104KB54PNC,,,C307331,1,100nF±10% X7R 50V JLCPCB Basic 0402 Capacitor,LCSC,Yes,100nF X7R 50V 0402 Capacitor,Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder,
+0805,2.2u,CL21A225KBQNNNE,,,C377773,1,2.2uF±10% X5R 50V JLCPCB Basic 0805 Capacitor,LCSC,Yes,2.2uF X5R 50V 0805 Capacitor,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,
+0805,10u,GRM21BR61H106KE43L,,81-GRM21BR61H106KE3K,C440198,1,10uF±10% X5R 50V JLCPCB Basic 0805 Capacitor,LCSC,Yes,10uF X5R 50V 0805 Capacitor,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,
+</part-attributes>

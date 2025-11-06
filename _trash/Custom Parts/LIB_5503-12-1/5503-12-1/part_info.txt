@@ -1,0 +1,9 @@
+Manufacturer=Coto Technology
+PartNumber=5503-12-1
+PartCategory=Relay or Contactor
+PackageCategory=Other
+PinCount=4
+Version=1.8
+Released=2022-05-13 04:13:13
+Downloaded=2024-05-25 07:47:15
+3D=Y

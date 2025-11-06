@@ -1,0 +1,39 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# VCF4-1000
+#
+DEF VCF4-1000 J 0 40 Y Y 1 L N
+F0 "J" -300 250 50 H V L BNN
+F1 "VCF4-1000" -300 -400 50 H V L BNN
+F2 "TE_VCF4-1000" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Socket" 0 0 50 H I L BNN "Product_Type"
+F5 "1393310-3" 0 0 50 H I L BNN "Comment"
+DRAW
+P 2 0 0 10 0 150 -50 200 N
+P 2 0 0 10 0 150 0 100 N
+P 2 0 0 10 0 100 0 -250 N
+P 2 0 0 10 0 -250 -50 -300 N
+P 2 0 0 10 -50 -300 -300 -300 N
+P 2 0 0 10 -300 -300 -300 200 N
+P 2 0 0 10 -300 200 -50 200 N
+P 2 0 0 10 0 100 -50 100 N
+A -75 100 25 2699 4500 0 0 10 N -75 125 -75 75
+P 2 0 0 10 0 0 -50 0 N
+A -75 0 25 2699 4500 0 0 10 N -75 25 -75 -25
+P 2 0 0 10 0 -100 -50 -100 N
+A -75 -100 25 2699 4500 0 0 10 N -75 -75 -75 -125
+P 2 0 0 10 0 -200 -50 -200 N
+A -75 -200 25 2699 4500 0 0 10 N -75 -175 -75 -225
+X 85 85 200 100 200 L 40 40 0 0 P 
+X 86 86 200 0 200 L 40 40 0 0 P 
+X 87 87 200 -100 200 L 40 40 0 0 P 
+X 87 87A 200 -100 200 L 40 40 0 0 P 
+X 30 30 200 -200 200 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

@@ -1,0 +1,176 @@
+<symbol-code>
+  (symbol "{Mfr P/N}"
+    (property "Reference" "C" (at 0 2.54 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "{Value}" (at 1.27 2.54 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "{Kicad FP}" (at 0 -2.54 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "{Datasheet}" (at 0 -3.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "SUBCKT" (at 0 -5.08 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=P1 2=P2" (at 0 -6.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Library" "${BFRUH_DIR}/Electronics/spice_models/bfr_capacitors/{Mfr P/N}.lib" (at 0 -7.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Name" "{Mfr P/N}" (at 0 -8.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Pretty Name" "{Pretty Name}" (at 0 -10.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Qty/Unit" "" (at 0 -11.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Cost/Unit" "" (at 0 -12.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Order From" "{Supplier Choice}" (at 0 -13.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Digikey P/N" "{Digikey P/N}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Mouser P/N" "{Mouser P/N}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC P/N" "{LCSC P/N}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "JLCPCB Basic Part" "{Basic Part Pretty}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Created by" "capacitor_generator.py script using electrolytic_capacitor_spec.txt" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "{Description}" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "{Mfr P/N}_0_1"
+      (polyline
+        (pts
+          (xy -2.032 0.762) (xy 2.032 0.762)
+        )
+        (stroke
+          (width 0.508)
+          (type default)
+        )
+        (fill
+          (type none)
+        )
+      )
+      (polyline
+        (pts
+          (xy -1.778 2.286) (xy -0.762 2.286)
+        )
+        (stroke
+          (width 0)
+          (type default)
+        )
+        (fill
+          (type none)
+        )
+      )
+      (polyline
+        (pts
+          (xy -1.27 1.778) (xy -1.27 2.794)
+        )
+        (stroke
+          (width 0)
+          (type default)
+        )
+        (fill
+          (type none)
+        )
+      )
+      (arc
+        (start 2.032 -1.27)
+        (mid 0 -0.5572)
+        (end -2.032 -1.27)
+        (stroke
+          (width 0.508)
+          (type default)
+        )
+        (fill
+          (type none)
+        )
+      )
+    )
+    (symbol "{Mfr P/N}_1_1"
+      (pin passive line
+        (at 0 3.81 270)
+        (length 2.794)
+        (name "~"
+          (effects
+            (font
+              (size 1.27 1.27)
+            )
+          )
+        )
+        (number "1"
+          (effects
+            (font
+              (size 1.27 1.27)
+            )
+          )
+        )
+      )
+      (pin passive line
+        (at 0 -3.81 90)
+        (length 3.302)
+        (name "~"
+          (effects
+            (font
+              (size 1.27 1.27)
+            )
+          )
+        )
+        (number "2"
+          (effects
+            (font
+              (size 1.27 1.27)
+            )
+          )
+        )
+      )
+    )
+  )
+</symbol-code>
+<spice-code>
+* Custom ceramic capacitor model
+* Simulated Characteristics
+*   Capacitance
+* Characteristics Not Simulated
+*   Temperature Effects
+*   Breakdown at High Voltage
+*   Part-to-Part Variance
+*   Thermal Noise
+*   Series Inductances
+*   Leakage Resistance
+*   Series Resistance
+
+.SUBCKT {Mfr P/N} P1 P2
+Cbody P1 P2 {Value}
+.ENDS
+</spice-code>
+
+Manufacturer P/N in use matches the Digikey and Mouser P/N's, but is not guaranteed to match the LCSC P/N.
+<part-attributes>
+Package,Value,Mfr P/N,Digikey P/N,Mouser P/N,LCSC P/N,Basic Part?,Description,Supplier Choice,Basic Part Pretty,Pretty Name,Kicad FP,Datasheet
+PTH,5,DGH505Q2R7,338-DGH505Q2R7-ND,598-DGH505Q2R7,,0,5F 2.7V 70mΩ ESR Through-hole Supercapacitor,Mouser,No,5F 2.7V Through-hole Capacitor,Capacitor_THT:CP_Radial_D10.0mm_P5.00mm,
+PTH,100m,FYD0H104ZF,399-10797-ND,80-FYD0H104ZF,,0,100mF 5.5V 100Ω ESR Through-hole Supercapacitor,Mouser,No,100mF 5.5V Through-hole Capacitor,Capacitor_THT:CP_Radial_D13.0mm_P5.00mm,
+PTH,10m,SLPX103M025A5P3,338-1565-ND,598-SLPX103M025A5P3,,0,10mF 25V 60mΩ ESR Through-hole Electrolytic Capacitor,Mouser,No,10mF 25V Through-hole Capacitor,Capacitor_THT:CP_Radial_D22.0mm_P10.00mm_SnapIn,
+PTH,3.3m,EKYB350ELL332MLN3S,565-EKYB350ELL332MLN3S-ND,661-EKYB350E332MLN3S,,0,3.3mF 35V 16mΩ ESR Through-hole Electrolytic Capacitor,Mouser,No,3.3mF 35V Through-hole Capacitor,Capacitor_THT:CP_Radial_D16.0mm_P7.50mm,
+PTH,1m,EKY-350ELL102MK25S,565-EKY-350ELL102MK25S-ND,661-EKY350ELL102MK2,,0,1mF 35V 27mΩ ESR Through-hole Electrolytic Capacitor,Mouser,No,1mF 35V Through-hole Capacitor,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,
+PTH,470u,25ZLH470MEFC10X12.5,1189-1869-ND,232-25ZLH470MEFC10X1,,0,470uF 25V 39mΩ ESR Through-hole Electrolytic Capacitor,Mouser,No,470uF 25V Through-hole Capacitor,Capacitor_THT:CP_Radial_D10.0mm_P5.00mm,
+PTH,220u,35ZLH220MEFC8X11.5,1189-1863-ND,232-35ZLH220MEFC8X15,,0,220uF 35V 56mΩ ESR Through-hole Electrolytic Capacitor,Mouser,No,220uF 35V Through-hole Capacitor,Capacitor_THT:CP_Radial_D8.0mm_P3.50mm,
+PTH,100u,50ZLH100MEFC8X11.5,1189-2327-ND,232-50ZLH100MEFC8X15,,0,100uF 50V 74mΩ ESR Through-hole Electrolytic Capacitor,Mouser,No,100uF 50V Through-hole Capacitor,Capacitor_THT:CP_Radial_D8.0mm_P3.50mm,
+</part-attributes>

@@ -1,0 +1,183 @@
+<symbol-code>
+  (symbol "{Mfr P/N}" (pin_numbers hide) (in_bom yes) (on_board yes)
+    (property "Reference" "R" (at 0 2.54 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "{Value}" (at 1.27 2.54 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "{Kicad FP}" (at 0 -2.54 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" (at 0 -3.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "SUBCKT" (at 0 -5.08 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=P1 2=P2" (at 0 -6.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Library" "${BFRUH_DIR}/Electronics/spice_models/bfr_resistors/{Mfr P/N}.lib" (at 0 -7.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Name" "{Mfr P/N}" (at 0 -8.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Pretty Name" "{Pretty Name}" (at 0 -10.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Qty/Unit" "" (at 0 -11.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Cost/Unit" "" (at 0 -12.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Order From" "{Supplier Choice}" (at 0 -13.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Digikey P/N" "{Digikey P/N}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Mouser P/N" "{Mouser P/N}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC P/N" "{LCSC P/N}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "JLCPCB Basic Part" "{Basic Part Pretty}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Created by" "resistor_generator.py script using jlcbasic_0402_1206_resistor_spec.txt" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "{Description}" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "{Mfr P/N}_0_1"
+      (polyline
+        (pts
+          (xy -2.286 0)
+          (xy -2.54 0)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.286 0)
+          (xy 2.54 0)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.286 0)
+          (xy -1.905 1.016)
+          (xy -1.524 0)
+          (xy -1.143 -1.016)
+          (xy -0.762 0)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -0.762 0)
+          (xy -0.381 1.016)
+          (xy 0 0)
+          (xy 0.381 -1.016)
+          (xy 0.762 0)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 0)
+          (xy 1.143 1.016)
+          (xy 1.524 0)
+          (xy 1.905 -1.016)
+          (xy 2.286 0)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+    )
+    (symbol "{Mfr P/N}_1_1"
+      (pin passive line (at -3.81 0 0) (length 1.27)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 3.81 0 180) (length 1.27)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+</symbol-code>
+<spice-code>
+* RMCF {Package} model
+* Simulated Characteristics
+*   Resistance
+* Characteristics Not Simulated
+*   Temperature Effects
+*   Breakdown at High Voltage
+*   Part-to-Part Variance
+*   Thermal Noise
+*   Parasitic Inductances
+*   Leakage Capacitances
+
+.SUBCKT {Mfr P/N} P1 P2
+Rbody P1 P2 {Value}
+.ENDS
+</spice-code>
+
+Manufacturer P/N in use matches the Digikey and Mouser P/N's, but is not guaranteed to match the LCSC P/N.
+<part-attributes>
+Package,Value,Mfr P/N,Digikey P/N,Mouser P/N,LCSC P/N,Basic Part?,Description,Supplier Choice,Basic Part Pretty,Pretty Name,Kicad FP
+0402,0,RMCF0402ZT0R00,RMCF0402ZT0R00CT-ND,708-RMCF0402ZT0R00,C17168,1,0Ω 0402 JLCPCB Basic Resistor,LCSC,Yes,0Ω 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,10,RMCF0402FT10R0,RMCF0402FT10R0CT-ND,708-RMCF0402FT10R0,C25077,1,10Ω 0402 JLCPCB Basic Resistor,LCSC,Yes,10Ω 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,22,RMCF0402FT22R0,RMCF0402FT22R0CT-ND,708-RMCF0402FT22R0,C25092,1,22Ω 0402 JLCPCB Basic Resistor,LCSC,Yes,22Ω 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,33,RMCF0402FT33R0,RMCF0402FT33R0CT-ND,708-RMCF0402FT33R0,C25105,1,33Ω 0402 JLCPCB Basic Resistor,LCSC,Yes,33Ω 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,100,RMCF0402FT100R,RMCF0402FT100RCT-ND,708-RMCF0402FT100R,C25076,1,100Ω 0402 JLCPCB Basic Resistor,LCSC,Yes,100Ω 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,120,RMCF0402FT120R,RMCF0402FT120RCT-ND,708-RMCF0402FT120R,C25079,1,120Ω 0402 JLCPCB Basic Resistor,LCSC,Yes,120Ω 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,200,RMCF0402FT200R,RMCF0402FT200RCT-ND,708-RMCF0402FT200R,C25087,1,200Ω 0402 JLCPCB Basic Resistor,LCSC,Yes,200Ω 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,220,RMCF0402FT220R,RMCF0402FT220RCT-ND,708-RMCF0402FT220R,C25091,1,220Ω 0402 JLCPCB Basic Resistor,LCSC,Yes,220Ω 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,330,RMCF0402FT330R,RMCF0402FT330RCT-ND,708-RMCF0402FT330R,C25104,1,330Ω 0402 JLCPCB Basic Resistor,LCSC,Yes,330Ω 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,470,RMCF0402FT470R,RMCF0402FT470RCT-ND,708-RMCF0402FT470R,C25117,1,470Ω 0402 JLCPCB Basic Resistor,LCSC,Yes,470Ω 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,510,RMCF0402FT510R,RMCF0402FT510RCT-ND,708-RMCF0402FT510R,C25123,1,510Ω 0402 JLCPCB Basic Resistor,LCSC,Yes,510Ω 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,1.0k,RMCF0402FT1K00,RMCF0402FT1K00CT-ND,708-RMCF0402FT1K00,C11702,1,1.0kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,1.0kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,1.5k,RMCF0402FT1K50,RMCF0402FT1K50CT-ND,708-RMCF0402FT1K50,C25867,1,1.5kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,1.5kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,2.0k,RMCF0402FT2K00,RMCF0402FT2K00CT-ND,708-RMCF0402FT2K00,C4109,1,2.0kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,2.0kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,2.2k,RMCF0402FT2K20,RMCF0402FT2K20CT-ND,708-RMCF0402FT2K20,C25879,1,2.2kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,2.2kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,3.3k,RMCF0402FT3K30,RMCF0402FT3K30CT-ND,708-RMCF0402FT3K30,C25890,1,3.3kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,3.3kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,4.7k,RMCF0402FT4K70,RMCF0402FT4K70CT-ND,708-RMCF0402FT4K70,C25900,1,4.7kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,4.7kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,5.1k,RMCF0402FT5K10,RMCF0402FT5K10CT-ND,708-RMCF0402FT5K10,C25905,1,5.1kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,5.1kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,10k,RMCF0402FT10K0,RMCF0402FT10K0CT-ND,708-RMCF0402FT10K0,C25744,1,10kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,10kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,12k,RMCF0402FT12K0,RMCF0402FT12K0CT-ND,708-RMCF0402FT12K0,C25752,1,12kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,12kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,15k,RMCF0402FT15K0,RMCF0402FT15K0CT-ND,708-RMCF0402FT15K0,C25756,1,15kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,15kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,20k,RMCF0402FT20K0,RMCF0402FT20K0CT-ND,708-RMCF0402FT20K0,C25765,1,20kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,20kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,22k,RMCF0402FT22K0,RMCF0402FT22K0CT-ND,708-RMCF0402FT22K0,C25768,1,22kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,22kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,33k,RMCF0402FT33K0,RMCF0402FT33K0CT-ND,708-RMCF0402FT33K0,C25779,1,33kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,33kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,47k,RMCF0402FT47K0,RMCF0402FT47K0CT-ND,708-RMCF0402FT47K0,C25792,1,47kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,47kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,51k,RMCF0402FT51K0,RMCF0402FT51K0CT-ND,708-RMCF0402FT51K0,C25794,1,51kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,51kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,100k,RMCF0402FT100K,RMCF0402FT100KCT-ND,708-RMCF0402FT100K,C25741,1,100kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,100kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,200k,RMCF0402FT200K,RMCF0402FT200KCT-ND,708-RMCF0402FT200K,C25764,1,200kΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,200kΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+0402,1.0M,RMCF0402FT1M00,RMCF0402FT1M00CT-ND,708-RMCF0402FT1M00,C26083,1,1.0MΩ 0402 JLCPCB Basic Resistor,LCSC,Yes,1.0MΩ 0402 Resistor,Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+1206,0,RMCF1206ZT0R00,RMCF1206ZT0R00CT-ND,708-RMCF1206ZT0R00,C17888,1,0Ω 1206 JLCPCB Basic Resistor,LCSC,Yes,0Ω 1206 Resistor,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder
+1206,1.0,RMCF1206FT1R00,RMCF1206FT1R00CT-ND,708-RMCF1206FT1R00,C17928,1,1.0Ω 1206 JLCPCB Basic Resistor,LCSC,Yes,1.0Ω 1206 Resistor,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder
+1206,10,RMCF1206FT10R0,RMCF1206FT10R0CT-ND,708-RMCF1206FT10R0,C17903,1,10Ω 1206 JLCPCB Basic Resistor,LCSC,Yes,10Ω 1206 Resistor,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder
+1206,20,RMCF1206FT20R0,RMCF1206FT20R0CT-ND,708-RMCF1206FT20R0,C17955,1,20Ω 1206 JLCPCB Basic Resistor,LCSC,Yes,20Ω 1206 Resistor,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder
+1206,22,RMCF1206FT22R0,RMCF1206FT22R0CT-ND,708-RMCF1206FT22R0,C17958,1,22Ω 1206 JLCPCB Basic Resistor,LCSC,Yes,22Ω 1206 Resistor,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder
+1206,100,RMCF1206FT100R,RMCF1206FT100RCT-ND,708-RMCF1206FT100R,C17901,1,100Ω 1206 JLCPCB Basic Resistor,LCSC,Yes,100Ω 1206 Resistor,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder
+1206,120,RMCF1206FT120R,RMCF1206FT120RCT-ND,708-RMCF1206FT120R,C17909,1,120Ω 1206 JLCPCB Basic Resistor,LCSC,Yes,120Ω 1206 Resistor,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder
+1206,300,RMCF1206FT300R,RMCF1206FT300RCT-ND,708-RMCF1206FT300R,C17887,1,300Ω 1206 JLCPCB Basic Resistor,LCSC,Yes,300Ω 1206 Resistor,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder
+1206,1.0k,RMCF1206FT1K00,RMCF1206FT1K00CT-ND,708-RMCF1206FT1K00,C4410,1,1.0kΩ 1206 JLCPCB Basic Resistor,LCSC,Yes,1.0kΩ 1206 Resistor,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder
+1206,2.0k,RMCF1206FT2K00,RMCF1206FT2K00CT-ND,708-RMCF1206FT2K00,C17944,1,2.0kΩ 1206 JLCPCB Basic Resistor,LCSC,Yes,2.0kΩ 1206 Resistor,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder
+1206,4.7k,RMCF1206FT4K70,RMCF1206FT4K70CT-ND,708-RMCF1206FT4K70,C17936,1,4.7kΩ 1206 JLCPCB Basic Resistor,LCSC,Yes,4.7kΩ 1206 Resistor,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder
+1206,10k,RMCF1206FT10K0,RMCF1206FT10K0CT-ND,708-RMCF1206FT10K0,C17902,1,10kΩ 1206 JLCPCB Basic Resistor,LCSC,Yes,10kΩ 1206 Resistor,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder
+1206,100k,RMCF1206FT100K,RMCF1206FT100KCT-ND,708-RMCF1206FT100K,C17900,1,100kΩ 1206 JLCPCB Basic Resistor,LCSC,Yes,100kΩ 1206 Resistor,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder
+1206,1.0M,RMCF1206FT1M00,RMCF1206FT1M00CT-ND,708-RMCF1206FT1M00,C17927,1,1.0MΩ 1206 JLCPCB Basic Resistor,LCSC,Yes,1.0MΩ 1206 Resistor,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder
+</part-attributes>

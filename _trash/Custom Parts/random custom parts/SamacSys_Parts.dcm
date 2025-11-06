@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP SN74HCS251QDRQ1
+D Encoders, Decoders, Multiplexers & Demultiplexers Automotive data selectors/multiplexers with 3-state outputs 16-SOIC -40 to 125
+K
+F 
+$ENDCMP
+#
+$CMP UJ2-MIBH-3-MSMT-TR-67
+D USB Connectors USB jack 2.0, micro B type, IP67, 5 pin, horizontal, 15 in plating, mid mount, T&R pckg
+K
+F https://componentsearchengine.com/Datasheets/1/UJ2-MIBH-3-MSMT-TR-67.pdf
+$ENDCMP
+#
+$CMP 320P14-U
+D Bipolar Transistors - BJT 4 PNP Matched Trans. Array DIP-14
+K
+F https://componentsearchengine.com/Datasheets/1/320P14-U.pdf
+$ENDCMP
+#
+$CMP FBR56ND12-W
+D Automotive Relays AUTO
+K
+F https://componentsearchengine.com/Datasheets/1/FBR56ND12-W.pdf
+$ENDCMP
+#
+#End Doc Library

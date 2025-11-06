@@ -1,0 +1,16 @@
+.5503-12-1 :1 ;Reed Relays REED RELAY SPST 3A 12V
+"5503121"
+*STM K
+*NGS
+*PLB 1="1" 2="COIL_1" 3="COIL_2" 4="4"
+*MXP 4
+*DFN 5503-12-1
+~!Newark Part Number (-)
+~!Newark Price/Stock (-)
+~!Manufacturer_Name (Coto Technology)
+~!Manufacturer_Part_Number (5503-12-1)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/5503-12-1.pdf)
+~!Height (19.05mm)
+~!3D_Model (5503-12-1)
+"5503-12-1"
+1.1!U 2.1!U 3.1!U 4.1!U 

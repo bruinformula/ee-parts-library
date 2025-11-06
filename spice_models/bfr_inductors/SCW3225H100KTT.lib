@@ -1,0 +1,17 @@
+
+* Custom power inductor model
+* Simulated Characteristics
+*   Inductance
+*   Series Resistance
+* Characteristics Not Simulated
+*   Temperature Effects
+*   Breakdown at High Voltage
+*   Saturation Current
+*   Part-to-Part Variance
+*   Thermal Noise
+*   Parasitic Capacitance
+
+.SUBCKT SCW3225H100KTT P1 P2
+Lbody P1 split 10u
+Rseries split P2 1.105
+.ENDS

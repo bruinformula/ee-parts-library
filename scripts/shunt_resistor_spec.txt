@@ -1,0 +1,146 @@
+<symbol-code>
+  (symbol "{Mfr P/N}" (pin_numbers hide) (in_bom yes) (on_board yes)
+    (property "Reference" "R" (at 0 2.54 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "{Value}" (at 1.27 2.54 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "{Kicad FP}" (at 0 -2.54 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "{Datasheet}" (at 0 -3.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "SUBCKT" (at 0 -5.08 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=P1 2=P2" (at 0 -6.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Library" "${BFRUH_DIR}/Electronics/spice_models/bfr_resistors/{Mfr P/N}.lib" (at 0 -7.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Name" "{Mfr P/N}" (at 0 -8.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Pretty Name" "{Pretty Name}" (at 0 -10.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Qty/Unit" "" (at 0 -11.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Cost/Unit" "" (at 0 -12.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Order From" "{Supplier Choice}" (at 0 -13.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Digikey P/N" "{Digikey P/N}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Mouser P/N" "{Mouser P/N}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC P/N" "{LCSC P/N}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "JLCPCB Basic Part" "{Basic Part Pretty}" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Created by" "resistor_generator.py script using shunt_resistor_spec.txt" (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "{Description}" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "{Mfr P/N}_0_1"
+      (polyline
+        (pts
+          (xy -2.286 0)
+          (xy -2.54 0)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.286 0)
+          (xy 2.54 0)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.286 0)
+          (xy -1.905 1.016)
+          (xy -1.524 0)
+          (xy -1.143 -1.016)
+          (xy -0.762 0)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -0.762 0)
+          (xy -0.381 1.016)
+          (xy 0 0)
+          (xy 0.381 -1.016)
+          (xy 0.762 0)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 0)
+          (xy 1.143 1.016)
+          (xy 1.524 0)
+          (xy 1.905 -1.016)
+          (xy 2.286 0)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+    )
+    (symbol "{Mfr P/N}_1_1"
+      (pin power_in line (at -3.81 0 0) (length 1.27)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_out line (at 3.81 0 180) (length 1.27)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+</symbol-code>
+<spice-code>
+* Custom shunt resistor model
+* Simulated Characteristics
+*   Resistance
+* Characteristics Not Simulated
+*   Temperature Effects
+*   Breakdown at High Voltage
+*   Part-to-Part Variance
+*   Thermal Noise
+*   Parasitic Inductances
+*   Leakage Capacitances
+
+.SUBCKT {Mfr P/N} P1 P2
+Rbody P1 P2 {Value}
+.ENDS
+</spice-code>
+
+Manufacturer P/N in use matches the Digikey and Mouser P/N's, but is not guaranteed to match the LCSC P/N.
+<part-attributes>
+Package,Value,Mfr P/N,Digikey P/N,Mouser P/N,LCSC P/N,Basic Part?,Description,Supplier Choice,Basic Part Pretty,Pretty Name,Kicad FP,Datasheet
+2512,1m,WSL20101L000FEA18,WSLF-.001CT-ND,71-WSL20101L000FEA18,C728297,0,1mΩ 2512 Resistor,Mouser,No,1mΩ 2512 Resistor,Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder,https://www.vishay.com/docs/31057/wslhigh.pdf
+2512,3m,TLRP3A30CR003FTDG,1712-TLRP3A30CR003FTDGCT-ND,279-TLRP3A30CR03FTDG,C728307,0,3mΩ 2512 Resistor,Mouser,No,3mΩ 2512 Resistor,Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder,https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773449-4&DocType=DS&DocLang=English
+1206,10m,WSL1206R0100FEA18,541-10052-1-ND,71-WSL1206R0100FEA18,C473031,0,10mΩ 1206 Resistor,Mouser,No,10mΩ 1206 Resistor,Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,https://www.vishay.com/docs/31057/wslhigh.pdf
+0805,30m,ERJ-6BWFR030V,P.03AQCT-ND,667-ERJ-6BWFR030V,C7467397,0,30mΩ 0805 Resistor,Mouser,No,30mΩ 0805 Resistor,Resistor_SMD:R_0805_2012Metric_Pad1.30x1.75mm_HandSolder,https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf
+0805,100m,RMCF0805FTR100,738-RMCF0805FTR100CT-ND,708-RMCF0805FTR100,C127687,0,100mΩ 0805 Resistor,Mouser,No,100mΩ 0805 Resistor,Resistor_SMD:R_0805_2012Metric_Pad1.30x1.75mm_HandSolder,https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf
+0805,300m,RL1220S-R30-F,RL12S.30FCT-ND,754-RL1220S-R30-F,C2934264,0,300mΩ 0805 Resistor,Mouser,No,300mΩ 0805 Resistor,Resistor_SMD:R_0805_2012Metric_Pad1.30x1.75mm_HandSolder,https://www.susumu.co.jp/common/pdf/n_catalog_partition08_en.pdf
+</part-attributes>

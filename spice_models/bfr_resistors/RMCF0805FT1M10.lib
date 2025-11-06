@@ -1,0 +1,15 @@
+
+* RMCF 0805 model
+* Simulated Characteristics
+*   Resistance
+* Characteristics Not Simulated
+*   Temperature Effects
+*   Breakdown at High Voltage
+*   Part-to-Part Variance
+*   Thermal Noise
+*   Parasitic Inductances
+*   Leakage Capacitances
+
+.SUBCKT RMCF0805FT1M10 P1 P2
+Rbody P1 P2 1.1M
+.ENDS

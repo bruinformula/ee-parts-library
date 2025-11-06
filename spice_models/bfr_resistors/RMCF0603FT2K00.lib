@@ -1,0 +1,15 @@
+
+* RMCF 0603 model
+* Simulated Characteristics
+*   Resistance
+* Characteristics Not Simulated
+*   Temperature Effects
+*   Breakdown at High Voltage
+*   Part-to-Part Variance
+*   Thermal Noise
+*   Parasitic Inductances
+*   Leakage Capacitances
+
+.SUBCKT RMCF0603FT2K00 P1 P2
+Rbody P1 P2 2.0k
+.ENDS

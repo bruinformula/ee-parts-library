@@ -1,0 +1,16 @@
+
+* Custom ceramic capacitor model
+* Simulated Characteristics
+*   Capacitance
+* Characteristics Not Simulated
+*   Temperature Effects
+*   Breakdown at High Voltage
+*   Part-to-Part Variance
+*   Thermal Noise
+*   Series Inductances
+*   Leakage Resistance
+*   Series Resistance
+
+.SUBCKT CL21C222JBFNNNE P1 P2
+Cbody P1 P2 2.2n
+.ENDS

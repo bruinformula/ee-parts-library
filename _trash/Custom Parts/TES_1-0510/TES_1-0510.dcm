@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TES_1-0510
+D 1 Watt DC/DC converter, industrial, +/-10% input, unregulated, plastic case, SMD package
+K
+F https://tracopower.com/tes1-datasheet/
+$ENDCMP
+#
+#End Doc Library

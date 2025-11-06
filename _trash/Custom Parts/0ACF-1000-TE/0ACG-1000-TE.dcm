@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 0ACG-1000-TE
+D BEL FUSE - 0ACG-1000-TE - SMD FUSE, 1A, 350VAC, 11.2MM X 5.05MM
+K
+F https://www.belfuse.com/resources/datasheets/circuitprotection/ds-CP-0ACG-series.pdf
+$ENDCMP
+#
+#End Doc Library
