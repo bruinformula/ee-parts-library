@@ -58,14 +58,6 @@
 				(hide yes)
 			)
 		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "ki_keywords" "STM32L552CCT6 M.2 NGFF Miniature Microcontroller"
 			(at 0 0 0)
 			(effects

@@ -1,0 +1,160 @@
+(footprint "THT SMA"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "THT SMA connector solder terminal")
+	(property "Reference" "REF**"
+		(at 0 -4.95 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "3baddf3d-d2e7-4a2f-af48-546d85b5a86b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "THT SMA"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "c8644469-94dc-489f-9896-0c349174d550")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6129/sma-j-p-x-st-th1-mkt.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2d6451ff-f33d-4618-9656-8f522e182ea8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "THT SMA connector solder terminal"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9b1ae12c-d660-416d-bdcc-7c64e96e5634")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -2.54 -2.54)
+		(end 2.54 2.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "e3274a2c-c067-40c3-b11c-23e067ec2cd3")
+	)
+	(fp_rect
+		(start -4.04 -4.04)
+		(end 4.04 4.04)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.CrtYd")
+		(uuid "63ffee44-d768-4952-b4f7-1a1196b0c362")
+	)
+	(fp_rect
+		(start -4.04 -4.04)
+		(end 4.04 4.04)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7287b9d4-56a3-4adf-83b7-0b07c9f02775")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "532040a5-43d7-4c06-84db-54dd2ef1065f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2.4 2.4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.051)
+		(uuid "68b5c23c-6ea3-4b61-818b-52aa4b02785d")
+	)
+	(pad "2" thru_hole circle
+		(at -2.54 -2.54)
+		(size 2.4 2.4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.051)
+		(uuid "98061874-0528-4539-9cdd-41c651f276a4")
+	)
+	(pad "2" thru_hole circle
+		(at -2.54 2.54)
+		(size 2.4 2.4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.051)
+		(uuid "05faf8e1-7313-4d0c-b0cc-fe35c6f4a3f3")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 -2.54)
+		(size 2.4 2.4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.051)
+		(uuid "13fc98f2-54b1-40b7-ae27-747c72d0c003")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 2.54)
+		(size 2.4 2.4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.051)
+		(uuid "88b6b88b-5b86-4841-80a8-c9d0f615a609")
+	)
+	(embedded_fonts no)
+	(model "${BFRUH_DIR}/Electronics/footprints/bfr_connectors.pretty/SMA-J-P-H-ST-TH1.stp"
+		(offset
+			(xyz 0 0 -0.25)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
