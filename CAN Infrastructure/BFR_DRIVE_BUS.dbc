@@ -377,6 +377,9 @@ BO_ 2553934724 TEMPS5_DATA: 8 Vector__XXX
  SG_ Lowest_thermistor_ID : 48|8@1+ (1,0) [0|200] "C" Vector__XXX
  SG_ Checksum : 56|8@1+ (1,0) [0|200] "" Vector__XXX
 
+BO_ 1715 CustomBMS_DiagInfo: 8 Vector__XXX
+ SG_ Precharge_Complete : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
 
 
 CM_ SG_ 173 INV_Iq_Command "The commanded Q-axis current";
@@ -518,6 +521,7 @@ CM_ BO_ 1714 "This ID Transmits at 8 ms.";
 CM_ BO_ 2550589428 "This ID Transmits at 808 ms.";
 CM_ BO_ 2550588916 "This ID Transmits at 808 ms.";
 CM_ BO_ 2550589940 "This ID Transmits at 808 ms.";
+CM_ SG_ 1715 Precharge_Complete "1 = Precharge Complete, 0 = Incomplete/Fault";
 BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
 BA_DEF_ BO_  "GenMsgCycleTime" INT 0 100000;
 BA_DEF_  "BusType" STRING ;
@@ -552,6 +556,7 @@ VAL_ 170 INV_VSM_State 0 "VSM Start State" 1 "Pre-Charge Init state" 2 "pre-char
 VAL_ 170 INV_Inverter_Discharge_State 0 "Disabled" 1 "Enabled" 2 "Speed Check" 3 "Active" 4 "Complete" 5 "Error" 6 "Override" 7 "Timeout" ;
 VAL_ 170 INV_Limit_Stall_Burst_Model 0 "Not Limiting" 1 "Limiting" ;
 VAL_ 170 INV_Burst_Model_Mode 0 "Stall" 1 "High Speed" ;
+
 
 
 
